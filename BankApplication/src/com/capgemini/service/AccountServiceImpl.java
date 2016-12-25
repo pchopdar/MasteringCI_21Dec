@@ -25,8 +25,8 @@ public class AccountServiceImpl implements AccountService {
 		}
 		
 		Account account = new Account();
-		account.setAccountNumber(101);
-		account.setAmount(5000);
+		account.setAccountNumber(accountNumber);
+		account.setAmount(amount);
 		
 		if(accountRepository.save(account)){
 			return account;
